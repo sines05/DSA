@@ -1,0 +1,17 @@
+Omega: best case
+Theta: Average case
+Omicron: Worst case - alway the worst case
+O(n): linear time
+First rule: drop constant: O(an) -> O(n) -> simplify a - const
+O(n^2)
+Second rule: drop non-dominant: O(n^2+n) -> O(n) (n -> big -> n less significant)
+O(1): the number of operations do not increase when n increase. Rule: O(a) -> O(1) - a const
+O(logn) : most efficient
+O(nlogn): some sort algorithm: quicksort, mergesort
+Different term for input: O(a+b), O(a*b)
+Big(O) in vector (array):  
+   Adding or removing at the end (don't need to reindex): O(1)
+   Adding or removing somewhere: O(n)
+   Looking by value: O(n)
+   Looking by index: O(1)
+
