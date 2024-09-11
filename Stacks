@@ -1,6 +1,7 @@
 Stack: a linear data structure that follows a particular in which the operations are performed. 
 
 1) Stack constructor using linkedlist:
+
 #include <iostream>
 using namespace std;
 
@@ -33,10 +34,16 @@ class Stack {
                 temp = temp->next;
             }
         }
+        
+        void push(int value) {
+            Node* newNode = new Node(value);
+            newNode->next = top;
+            top = newNode;
+        }
 };
 
 int main() {
     Stack* newStack = new Stack(4);
+    newStack->push(7);
     newStack->printStack();
 }
-
