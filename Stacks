@@ -3,6 +3,7 @@ Stack: a linear data structure that follows a particular in which the operations
 1) Stack constructor using linkedlist:
 
 #include <iostream>
+#include <climits>
 using namespace std;
 
 class Node {
@@ -40,10 +41,23 @@ class Stack {
             newNode->next = top;
             top = newNode;
         }
+        
+        int pop() {
+            if (height == 0) return INT_MIN;
+            Node* temp = top;
+            int poppedValue = top->value;
+            top = top->next;
+            delete temp;
+            height--;
+            return poppedValue;
+        }
 };
 
 int main() {
     Stack* newStack = new Stack(4);
     newStack->push(7);
     newStack->printStack();
+    cout << "Popped Value: " << newStack->pop() << endl;
+    cout << "Popped Value: " << newStack->pop();
+    delete newStack;
 }
