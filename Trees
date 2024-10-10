@@ -1,0 +1,6 @@
+Some terminologies:
+Full tree: Every node either points to zero nodes or two nodes
+Perfect tree: Any level in the tree that has any nodes is completely filled all the way accross
+Complete tree: Filling the tree from left to right with no gaps
+Two nodes with the same parent called siblings, every node can only has one parent
+Leaf: a node doesn't have children
