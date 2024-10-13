@@ -4,3 +4,4 @@ Perfect tree: Any level in the tree that has any nodes is completely filled all 
 Complete tree: Filling the tree from left to right with no gaps
 Two nodes with the same parent called siblings, every node can only has one parent
 Leaf: a node doesn't have children
+Binary search tree: If you take any node in the binary search tree, all nodes below it to the right are going to be greater than that node. Everything on the left is going to be less than
